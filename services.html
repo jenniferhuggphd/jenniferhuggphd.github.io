@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer E. Hugg, PhD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="services.html">Psychotherapy Services</a>
+        <a href="fees.html">Fees & Payments</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content-wrapper">
+        <!-- Left Column: Photo + Title -->
+        <div class="profile-column">
+            <img src="headshot.jpg" alt="Jennifer E. Hugg, PhD">
+            <h1>
+                Jennifer E. Hugg, PhD
+                <span class="subtitle">Licensed Clinical Psychologist</span>
+            </h1>
+        </div>
+        <!-- Right Column: About Text -->
+        <div class="about-column">
+            <div class="about-text">
+                <p style="text-decoration: underline;">I currently offer psychotherapy sessions through telehealth only, and do not have an in-person office. I take patients aged 18+ years. During all sessions, patients must be physically located in Massachusetts.</p>
+                <p>If you decide to pursue psychotherapy with me, please let me know if you have any preferences about (a) certain type(s) of therapy. (Or you might not have any preference which is okay too!) Some therapies I can provide in an adherent 'by-the-book' way, meaning it's the way the therapy was developed and studied, and some I can provide in a non-adherent way. Many therapists do therapy in a non-adherent way because in real life we often need to make small adjustments for individual circumstances, and this means the therapy doesn't meet the strict 'adherent' definition. Therapy being adherent is important in some situations, and if you decide to work with me, I will explain to you which adherence options I think will work best and why.</p>
+                <p>There are also many situations when it makes sense to take an integrated approach that is flexible and informed by multiple psychotherapies, models, and theories. For all therapies I use, I customize the course of treatment to each patient’s individual needs, wants, and context. </p>
+                <p>I work with the great majority of symptoms and presentations. However, there are some areas that are outside of my expertise. This does not mean that if you are experiencing these symptoms that I cannot provide you psychotherapy, but rather that more intense severities of these disorders and related symptoms are not my specialty. If any of the following symptoms and/or disorders are the primary reason you are seeking psychotherapy, we may not be a good fit: Attention-Deficit/Hyperactivity Disorder (ADHD), Autism Spectrum Disorder (ASD), eating disorders, substance use disorders, and high-risk suicidality and self-injury. This list is an overview, and is not exhaustive.</p>
+                <p>Below, I describe the types of services I provide with reference to each therapy listed. Many of the therapies can be applied to a multitude of symptoms and presentations (e.g., depression, anxiety, trauma, grief, emotion dysregulation, interpersonal challenges), and others may work well with a more precise and targeted focus. All of these treatments are evidence-based, which means that they have been demonstrated using the scientific method to be effective. For all of these therapies, I provide them in an individual format only. They are listed in alphabetical order.</p>
+
+                <h4>Acceptance and Commitment Therapy (ACT)</h4>
+                <p>I am intensively trained in ACT and can provide this psychotherapy for many different symptoms and presentations. ACT also works very well integrated with other treatments.</p>
+
+                <h4>Cognitive Behavioral Therapy (CBT)</h4>
+                <p>I am intensively trained in CBT and can provide this psychotherapy for many different symptoms and presentations. Many CBT components also work well integrated with other treatments.</p>
+
+                <h4>Cognitive Processing Therapy (CPT)</h4>
+                <p>I am intensively trained in CPT and can provide this psychotherapy in an adherent or non-adherent way. CPT is an evidence-based therapy for trauma. If delivered in a non-adherent way, some parts integrate well with other treatments.</p>
+
+                <h4>Dialectical Behavior Therapy (DBT)</h4>
+                <p style="text-decoration: underline;">Please note I do not provide adherent DBT.</p>
+                <p>I am intensively trained in DBT skills training, and frequently integrate DBT skills into other psychotherapies.</p>
+
+                <h4>Exposure and Response Prevention (ERP)</h4>
+                <p>I am competent in and can provide ERP, which is the gold standard psychotherapy for Obsessive and Compulsive Disorder (OCD). I can deliver it in an adherent or non-adherent way. If delivered in a non-adherent way, many parts integrate well with other treatments.</p>
+
+                <h4>Exposure Therapy</h4>
+                <p>I am intensively trained in exposure therapy, which is frequently used to treat anxiety disorders. It integrates very well with other treatments and can be used for many other symptoms and presentations. Exposure therapy can be considered a component of CBT (see above), and is also often used as a therapy in its own right.</p>
+
+                <h4>Radically Open Dialectical Behavior Therapy (RO DBT)</h4>
+                <p style="text-decoration: underline;">Please note I do not provide adherent RO DBT.</p>
+                <p>I am intensively trained in RO DBT, and can provide non-adherent, RO DBT-informed psychotherapy. Many elements of RO DBT can integrate well with other treatments.</p>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright © <span id="current-year-range"></span> Jennifer E. Hugg, PhD. All Rights Reserved.
+    </footer>
+    <script>
+        function updateYearRange() {
+            const currentYear = new Date().getFullYear();
+            const startYear = 2025;
+            if (currentYear === startYear) {
+                document.getElementById('current-year-range').textContent = startYear.toString();
+            } else {
+                document.getElementById('current-year-range').textContent = `${startYear}-${currentYear}`;
+            }
+        }
+        updateYearRange();
+    </script>
+</body>
+</html>

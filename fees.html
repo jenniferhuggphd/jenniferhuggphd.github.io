@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer E. Hugg, PhD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="services.html">Psychotherapy Services</a>
+        <a href="fees.html">Fees & Payments</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content-wrapper">
+        <!-- Left Column: Photo + Title -->
+        <div class="profile-column">
+            <img src="headshot.jpg" alt="Jennifer E. Hugg, PhD">
+            <h1>
+                Jennifer E. Hugg, PhD
+                <span class="subtitle">Licensed Clinical Psychologist</span>
+            </h1>
+        </div>
+        <!-- Right Column: About Text -->
+        <div class="about-column">
+            <div class="about-text">
+                <p>I accept private payment and Blue Cross Blue Shield of Massachusetts insurance.</p>
+                <p>Please contact me for information on my session rates.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright © <span id="current-year-range"></span> Jennifer E. Hugg, PhD. All Rights Reserved.
+    </footer>
+    <script>
+        function updateYearRange() {
+            const currentYear = new Date().getFullYear();
+            const startYear = 2025;
+            if (currentYear === startYear) {
+                document.getElementById('current-year-range').textContent = startYear.toString();
+            } else {
+                document.getElementById('current-year-range').textContent = `${startYear}-${currentYear}`;
+            }
+        }
+        updateYearRange();
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer E. Hugg, PhD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="services.html">Psychotherapy Services</a>
+        <a href="fees.html">Fees & Payments</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content-wrapper">
+        <!-- Left Column: Photo + Title -->
+        <div class="profile-column">
+            <img src="headshot.jpg" alt="Jennifer E. Hugg, PhD">
+            <h1>
+                Jennifer E. Hugg, PhD
+                <span class="subtitle">Licensed Clinical Psychologist</span>
+            </h1>
+        </div>
+        <!-- Right Column: About Text -->
+        <div class="about-column">
+            <div class="about-text">
+                <p>Hi there! My name is Jennifer and I'm a clinical psychologist practicing in Boston, MA. I am originally from Des Moines, IA and first moved to Massachusetts for my undergraduate studies at Amherst College, where I majored in psychology and anthropology. After Amherst, I worked as a counselor at McLean Hospital in Belmont, MA for a couple of years before heading up to the University of Maine for my PhD in Clinical Psychology, a program accredited by the American Psychological Association (APA).</p>
+                <p>I completed my Predoctoral Internship with the Central Western Massachusetts VA Healthcare System, Integrated Outpatient Behavioral Health track, in Worcester, MA, which is an APA-accredited internship. I was thrilled to be able to return to Boston and call it home during my Postdoctoral Fellowship with the Boston Child Study Center, in Boston, MA.</p>
+                <p>When I'm not practicing psychology, you can usually find me knitting, cooking, looking for ramen and wood-fired pizza, or window shopping for furniture I definitely do not have the space for.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright © <span id="current-year-range"></span> Jennifer E. Hugg, PhD. All Rights Reserved.
+    </footer>
+    <script>
+        function updateYearRange() {
+            const currentYear = new Date().getFullYear();
+            const startYear = 2025;
+            if (currentYear === startYear) {
+                document.getElementById('current-year-range').textContent = startYear.toString();
+            } else {
+                document.getElementById('current-year-range').textContent = `${startYear}-${currentYear}`;
+            }
+        }
+        updateYearRange();
+    </script>
+</body>
+</html>
