@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer E. Hugg, PhD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="services.html">Psychotherapy Services</a>
+        <a href="fees.html">Fees & Payments</a>
+        <a href="rights.html">Patients' Rights Notice</a>
+        <a href="npp.html">Notice of Privacy Practices</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content-wrapper">
+        <!-- Left Column: Photo + Title -->
+        <div class="profile-column">
+            <img src="headshot.jpg" alt="Jennifer E. Hugg, PhD">
+            <h1>
+                Jennifer E. Hugg, PhD
+                <span class="subtitle">Licensed Clinical Psychologist</span>
+            </h1>
+        </div>
+        <!-- Right Column: About Text -->
+        <div class="about-column">
+            <div class="about-text">
+                <h3>Patients' Rights Notice - Your Cost of Care</h3>
+                <p style="font-weight: bold;">Under the federal No Surprises Act, we are required to inform you of the following rights you have regarding advance notice of the out-of-pocket costs you may incur if you are uninsured, or if you have non-governmental health insurance coverage.</p>
+                <p>Upon the scheduling of any non-emergency encounter, or upon your request, we will disclose whether we participate in your health insurance plan.</p>
+                <p>Should we be unable to quote a specific amount due to the inability to predict in advance your specific treatment needs or diagnosis, we will disclose an estimate of the out-of-pocket costs you will be required to pay.</p>
+                <p>If we do not participate with your health insurance plan, we will inform you that we do not accept your health insurance before your scheduled appointment, unless your visit is scheduled less than 7 days in advance in which case we will inform you not less than 2 days before your scheduled visit or as soon as is practicable before the scheduled appointment, with written notice of that fact to be provided upon your arrival or video sign-on for the appointment.</p>
+                <p>If we do not participate with your health insurance plan, you may be able to obtain the same services at a lower cost from a health care provider who participates in your health benefit plan.</p>
+                <p>If we do not participate in your health insurance plan, or if you choose not to use your health insurance for care rendered by our practice, or if you are uninsured, you have a right to receive a written disclosure of the charges you will be responsible to pay us which will be provided to you via a written Good Faith Estimate of your expected out-of-pocket health care costs within the following time frames:</p>
+                <ul>
+                    <li>If you schedule your appointment at least 10 business days in advance: within 3 business days after scheduling.</li>
+                    <li>If you schedule your appointment at least 3 business days in advance: within 1 business day after scheduling.</li>
+                </ul>
+                <p>You also have the right to request a Good Faith Estimate in writing within 3 business days of request, even if your visit will be covered by your non-governmental health insurance plan. If we are unable to tell you a specific amount (because we cannot predict what specific treatment will be needed), we will disclose to you the estimated maximum amount that you will pay.</p>
+                <p>You have a right to dispute a bill from our office if it is at least $400 more than the Good Faith Estimate we have provided you. For any questions or more information about your rights under the No Surprises Act, visit <a href="https://www.cms.gov/nosurprises/consumers" target="_blank" rel="noopener">www.cms.gov/nosurprises/consumers</a> or call <a href="tel:1-800-985-3059">1-800-985-3059</a>.</p>
+                <p style="font-weight: bold;">You have the following additional rights under the Massachusetts Patients' First Law:</p>
+                <p>If we participate with your health insurance plan, at the time of scheduling your care, you will have a right to request disclosure within 2 days of the out-of-pocket costs you will be required to pay, including any co-pay or possible deductible amounts, and we will assist you, if requested, in seeking additional information about such applicable out-of-pocket costs from your health plan via its consumer toll-free telephone number and website.</p>
+                <p>If we refer you to another provider for further services, prior to making an appointment or your agreeing to use the services of that provider, we will give you the opportunity to verify whether the provider participates in your health plan, and give you enough information so you can determine what out-of-pocket costs may apply. If we directly schedule or otherwise arrange for health care services by another provider on your behalf, prior to scheduling we will verify whether the provider to whom the patient is being referred participates in your health plan; and will notify you if that provider is non-participating in your health plan or if network status cannot be verified.</p>
+                <p>If you believe you did not receive adequate advance notice of your out-of-pocket costs under the Massachusetts Patients First Law, you can find out more about your rights and ability to file a complaint at <a href="https://www.mass.gov/news/pricing-transparency-provisions-of-an-act-promoting-a-resilient-health-care-system-that-puts-patients-first-patients-first" target="_blank" rel="noopener">the Massachusetts Department of Public Health site</a>.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright © <span id="current-year-range"></span> Hugg Psychotherapy LLC. All Rights Reserved.
+    </footer>
+    <script>
+        function updateYearRange() {
+            const currentYear = new Date().getFullYear();
+            const startYear = 2025;
+            if (currentYear === startYear) {
+                document.getElementById('current-year-range').textContent = startYear.toString();
+            } else {
+                document.getElementById('current-year-range').textContent = `${startYear}-${currentYear}`;
+            }
+        }
+        updateYearRange();
+    </script>
+</body>
+</html>
